@@ -2,6 +2,7 @@
 body{
     width: 100%;
     height: 100%;
+    margin: 0 auto;
 }
 
 /*Edição de cabeçalho*/
@@ -16,3 +17,86 @@ main{
     width: 980px;
     position: relative;
 }
+
+.logo{
+    padding: 16px;
+    float: left;
+    width: 70%;
+}
+
+.redes-sociais ul li{
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.redes-sociais{
+    float: right;
+    width: 25%;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.sub-menu-principal{
+    border-bottom: 8px solid #efefef;
+    height: 80px;
+}
+
+.header-2{
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+    height: 45px;
+}
+
+.menu ul li:hover{
+    border-bottom: 1px solid #00bac6;
+}
+
+.menu ul li a:hover{
+    color: #00bac6;
+}
+
+ul{ /*Resetar as configurações padrões de margin e padding do navegador*/
+    padding: 0px!important;
+}
+
+.menu ul li a{
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu{
+    width: 70%;
+    float: left;
+}
+
+.busca{
+    width: 30%;
+    float: right;
+    text-align: center;
+}
+
+.busca input{
+    background-image: url('../img/icone-search.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    margin-top: 10px;
+    padding: 12px;
+    width: 190px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+}
+
