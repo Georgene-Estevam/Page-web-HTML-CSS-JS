@@ -12,7 +12,7 @@ body{
     height: 60px;
 }
 
-main{
+main, .content{
     margin: 0 auto;
     width: 980px;
     position: relative;
@@ -100,3 +100,101 @@ ul{ /*Resetar as configurações padrões de margin e padding do navegador*/
     border-radius: 5px;
 }
 
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/anterior.png');
+    top: 40%;
+    left: 14%;
+}
+
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color:transparent;
+    position: absolute;
+    background-image: url('../img/proximo.png');
+    top: 40%;
+    right: 14%;
+}
+
+.slider-principal{
+    overflow: hidden;
+}
+/* Excluir isso caso o overflow: hidden da classe .slider-principal funcione corretamente
+
+.slick-initialized{
+    overflow: hidden;
+}*/
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+
+li.slick-active button {
+    background: #00bac6;
+}
+
+
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 45%;
+    top: 400px;
+}
+
+.slick-dots li{
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.texto-destaque{
+    text-align: center;
+}
+
+.texto-destaque h1{
+    color: #545454;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.texto-destaque p{
+    color: #9a9a9a;
+    font-size: 18px;
+    position: absolute;
+}
+
+.col-3{
+    width: 29%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+.margem-bloco{
+    margin-top: 10em;
+}
+.col-3 .img-meio{
+    margin-top: 3em;
+}
+h3 {
+    font-weight: normal;
+    font-family: sans-serif;
+}
