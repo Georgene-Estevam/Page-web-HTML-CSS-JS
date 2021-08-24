@@ -5,7 +5,7 @@ body{
     margin: 0 auto;
 }
 
-/*Edição de cabeçalho*/
+/*EDIÇÃO DO CABEÇALHO*/
 .menu-principal{
     width: 100%;
     background-color: #252323;
@@ -34,6 +34,7 @@ main, .content{
     width: 25%;
 }
 
+/*EDIÇÃO DO SLIDE*/
 .col-100{
     width: 100%;
     float: left;
@@ -126,14 +127,10 @@ button.slick-next{
     right: 14%;
 }
 
+/*EDIÇÃO DO CAMPO DE SLIDES*/
 .slider-principal{
     overflow: hidden;
 }
-/* Excluir isso caso o overflow: hidden da classe .slider-principal funcione corretamente
-
-.slick-initialized{
-    overflow: hidden;
-}*/
 
 .slick-dots li button {
     font-size: 0px;
@@ -164,6 +161,7 @@ li.slick-active button {
     padding-left: 8px;
 }
 
+/*EDIÇÃO DO CONTEÚDO DA PÁGINA*/
 .texto-destaque{
     text-align: center;
 }
@@ -197,4 +195,144 @@ li.slick-active button {
 h3 {
     font-weight: normal;
     font-family: sans-serif;
+}
+
+/*EDIÇÃO DO CAMPO DE FOTOS*/
+.campo-fotos{
+    display: inline-block;
+    margin-top: 100px;
+    width: 100%;
+    background-color: #efefef;
+}
+.bloco-fotos{
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.campo-fotos::before{
+    width: 100%;
+    background-color: #ffffff;
+    content: '';
+    height: 50px;    
+    background-image: url(../img/setinha.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;    
+}
+
+.fotos{
+    border: 1px solid #252323;
+    padding: 20px 0px 10px 22px;
+    margin-left: 45px;
+    height: 280px;
+    width: 350px;
+    background-color: #efefef;
+}
+.fotos p{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+/*EDIÇÃO DE CAMPO DE PARCEIROS/APOIADORES*/
+.bloco-logos{
+    height: 170px;
+}
+
+.col-4{
+    float: left;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    height: 120px;
+}
+
+.col-4 img{
+    margin: 0 auto;    
+    vertical-align: middle;
+    margin-top: 40px;
+}
+
+.col-4 img:hover{
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.col-4 .posicao-foto{
+    margin-top: 50px;
+}
+
+/*EDIÇÃO DO FOOTER*/
+.footer{
+    background-image: url(../img/footer.png);
+    color: #ffffff;
+    height: 400px;
+    width: 100%;
+}
+
+.footer h3{
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 15px;
+    margin-top: 30px;
+}
+
+.footer p{
+    float: left;
+    margin-left: 0px;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 20px 20px;
+    text-align: justify;
+}
+
+.clock-icon::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/clock.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    float: left;
+    padding-left: 5px;
+}
+
+.local-icon::before, .email-icon::before, .tel-icon::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    float: left;
+    padding-left: 5px;
+    padding: 3px 3px;
+}
+.local-icon::before{
+    background-image: url(../img/local.png);
+}
+.email-icon::before{
+    background-image: url(../img/email.png);
+}
+.footer a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #ffffff;
+    float: left;
+}
+.tel-icon::before{
+    background-image: url(../img/telefoneico.png);
+}
+
+.footer-2{
+    background-image: url(../img/footer2.png);
+    color: #ffffff;
+    height: 40px;
+    width: 1250px;
+    padding: 30px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
